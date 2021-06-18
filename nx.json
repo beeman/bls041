@@ -19,6 +19,18 @@
     }
   },
   "projects": {
+    "contact": {
+      "tags": []
+    },
+    "home": {
+      "tags": []
+    },
+    "post": {
+      "tags": []
+    },
+    "shell": {
+      "tags": []
+    },
     "web": {
       "tags": []
     },

@@ -1,6 +1,106 @@
 {
   "version": 1,
   "projects": {
+    "contact": {
+      "projectType": "library",
+      "root": "libs/contact",
+      "sourceRoot": "libs/contact/src",
+      "prefix": "bls041",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/contact"],
+          "options": {
+            "jestConfig": "libs/contact/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/contact/src/**/*.ts",
+              "libs/contact/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "home": {
+      "projectType": "library",
+      "root": "libs/home",
+      "sourceRoot": "libs/home/src",
+      "prefix": "bls041",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/home"],
+          "options": {
+            "jestConfig": "libs/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/home/src/**/*.ts",
+              "libs/home/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "post": {
+      "projectType": "library",
+      "root": "libs/post",
+      "sourceRoot": "libs/post/src",
+      "prefix": "bls041",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/post"],
+          "options": {
+            "jestConfig": "libs/post/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/post/src/**/*.ts",
+              "libs/post/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shell": {
+      "projectType": "library",
+      "root": "libs/shell",
+      "sourceRoot": "libs/shell/src",
+      "prefix": "bls041",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shell"],
+          "options": {
+            "jestConfig": "libs/shell/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shell/src/**/*.ts",
+              "libs/shell/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "web": {
       "projectType": "application",
       "root": "apps/web",

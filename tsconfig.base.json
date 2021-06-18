@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@bls041/contact": ["libs/contact/src/index.ts"],
+      "@bls041/home": ["libs/home/src/index.ts"],
+      "@bls041/post": ["libs/post/src/index.ts"],
+      "@bls041/shell": ["libs/shell/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
